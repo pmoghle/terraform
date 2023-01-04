@@ -1,24 +1,24 @@
 provider "aws" {
 
-    access_key = "${var.AKIAQPEKF2BZAWQMHXIZ}"
+    access_key = "${var.aws_access_key}"
 
-    secret_key = "${var.pwDKlRjIIy7eAoFCvGo6CMTDwsL7xydLu3Y2HeOc}"
+    secret_key = "${var.aws_secret_key}"
 
-    region = "${var.ap-south-1}"
+    region = "${var.region}"
 
 }
 
 module "s3" {
 
-    source = "</usr/bin/>"
+    source = "<path-to-S3-folder>"
 
-    bucket_name = "pooja_bucket"       
+    bucket_name = "your_bucket_name"       
 
 }
 
 resource "aws_s3_bucket" "temps3" {
 
-    bucket = "${var.pooja_bucket}" 
+    bucket = "${var.bucket_name}" 
 
     acl = "${var.acl_value}"   
 
