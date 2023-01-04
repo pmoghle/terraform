@@ -10,7 +10,7 @@ provider "aws" {
 
 module "s3" {
 
-    source = "<path-to-S3-folder>"
+    source = "</usr/bin/>"
 
     bucket_name = "pooja-bucket"       
 
