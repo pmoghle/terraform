@@ -1,4 +1,4 @@
-variable "pooja-bucket" {}
+variable "bucket_name" {}
 
 variable "acl_value" {
 
@@ -6,20 +6,20 @@ variable "acl_value" {
 
 }
 
-variable "AKIAQPEKF2BZAWQMHXIZ" {
+variable "aws_access_key" {
 
-default = “<AKIAQPEKF2BZAWQMHXIZ>”
+default = “<your_access_key>”
 
 }
 
-variable "pwDKlRjIIy7eAoFCvGo6CMTDwsL7xydLu3Y2HeOc" {
+variable "aws_secret_key" {
 
-default = “<your_secret_keypwDKlRjIIy7eAoFCvGo6CMTDwsL7xydLu3Y2HeOc>”
+default = “<your_secret_key>”
 
  }
 
-variable "ap-south-1" {
+variable "region" {
 
-    default = "ap-south-1"
+    default = "region"
 
 }
