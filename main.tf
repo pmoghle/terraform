@@ -12,13 +12,13 @@ module "s3" {
 
     source = "</usr/bin/>"
 
-    bucket_name = "pooja-bucket"       
+    bucket_name = "pooja_bucket"       
 
 }
 
 resource "aws_s3_bucket" "temps3" {
 
-    bucket = "${var.pooja-bucket}" 
+    bucket = "${var.pooja_bucket}" 
 
     acl = "${var.acl_value}"   
 
